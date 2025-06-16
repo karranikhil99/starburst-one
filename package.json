@@ -1,0 +1,43 @@
+{
+  "name": "starburst-one",
+  "displayName": "Starburst One",
+  "description": "Unified Starburst SQL Toolkit with multi-connection support in VS Code.",
+  "version": "1.0.1",
+  "publisher": "nikhilkarra",
+  "author": {
+    "name": "Nikhil Reddy Karra",
+    "email": "knikhilwork99@gmail.com"
+  },
+  "license": "MIT",
+  "engines": {
+    "vscode": ">=1.70.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/karranikhil99/starburst-one"
+  },
+  "categories": [
+    "Other",
+    "Programming Languages",
+    "Data Science"
+  ],
+  "activationEvents": [
+    "onCommand:extension.runStarburstQuery",
+    "onCommand:extension.addConnection"
+  ],
+  "main": "./src/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.runStarburstQuery",
+        "title": "Run Starburst Query"
+      },
+      {
+        "command": "extension.addConnection",
+        "title": "Add Starburst Connection"
+      }
+    ]
+  },
+  "scripts": {},
+  "dependencies": {}
+}
