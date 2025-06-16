@@ -1,12 +1,13 @@
 {
-  "name": "starburst-one",
-  "displayName": "Starburst One",
-  "description": "Unified Starburst SQL Toolkit with multi-connection support in VS Code.",
-  "version": "1.0.1",
+  "name": "StarburstOne",
+  "displayName": "StarburstOne",
+  "description": "Navigate Trino and Starburst queries with precision and speed — your unified VS Code SQL toolkit.",
+  "version": "1.0.2",
   "publisher": "nikhilkarra",
+  "icon": "media/StarburstOne-logo.png",
   "author": {
     "name": "Nikhil Reddy Karra",
-    "email": "knikhilwork99@gmail.com"
+    "email": "nrkarra3156@muleriders.saumag.edu"
   },
   "license": "MIT",
   "engines": {
@@ -23,18 +24,33 @@
   ],
   "activationEvents": [
     "onCommand:extension.runStarburstQuery",
-    "onCommand:extension.addConnection"
+    "onCommand:extension.addConnection",
+    "onCommand:extension.listConnections",
+    "onCommand:extension.deleteConnection",
+    "onCommand:extension.exportQueryResult"
   ],
   "main": "./src/extension.js",
   "contributes": {
     "commands": [
       {
         "command": "extension.runStarburstQuery",
-        "title": "Run Starburst Query"
+        "title": "Run Trino Query"
       },
       {
         "command": "extension.addConnection",
-        "title": "Add Starburst Connection"
+        "title": "Add Trino Connection"
+      },
+      {
+        "command": "extension.listConnections",
+        "title": "List Trino Connections"
+      },
+      {
+        "command": "extension.deleteConnection",
+        "title": "Delete Trino Connection"
+      },
+      {
+        "command": "extension.exportQueryResult",
+        "title": "Export Query Result to CSV"
       }
     ]
   },
