@@ -10,4 +10,4 @@ A VS Code extension to run and manage Starburst SQL queries with support for mul
 ## Setup
 1. Install Python and `pystarburst`
 2. Use `Add Starburst Connection` from command palette
-3. Select your query and run using `Run Starburst Query`
+3. Select your query and run using `Run Starburst and trino Query`
